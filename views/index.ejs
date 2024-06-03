@@ -1,7 +1,7 @@
 <!--Included header.ejs-->
 <%- include('layout/header') %>
 
-    <div class="container">
+    <div class="container mt-5">
         <div class="row">
             <div class="col-lg-12">
                 <% if (message) { %>
@@ -32,7 +32,7 @@
                                                 <td>
                                                     <%= index %>
                                                 </td>
-                                                <td><img src="<%= row.image %>" width="50" class="img-thumbnail"></td>
+                                                <td><img src="<%= row.image %>" width="50" ></td>
                                                 <td>
                                                     <%= row.name %>
                                                 </td>
@@ -54,6 +54,7 @@
                                 </table>
                                 <% } else { %>
                                     <h1 class="text-center text-secondary mt-5">No users found in the database</h1>
+                                    <h5 class="text-center text-danger mt-5">Click "Add Users" to add new user.</h5>
                                     <% } %>
 
 

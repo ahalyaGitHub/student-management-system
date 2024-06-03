@@ -1,9 +1,9 @@
 <!--Included header.ejs-->
 <%- include('layout/header') %>
 
-    <div class="container">
+    <div class="container pt-5">
         <div class="row">
-            <div class="col-lg-6 mx-auto mt-4">
+            <div class="col-lg-6 mx-auto mt-4 fw-bold">
                 <div class="card shadow">
                     <div class="card-header bg-primary">
                         <h3 class="text-light">Add New User</h3>
@@ -12,23 +12,23 @@
                         <!--POST method-->
                         <form action="/add" method="post" id="add-form" enctype="multipart/form-data">
                             <div class="mb-3">
-                                <label for="name">Name</label>
-                                <input type="text" name="name" class="form-control form-control-lg"
+                                <label for="name">Name :</label>
+                                <input type="text" name="name" class="form-control "
                                     placeholder="Enter name" required />
                             </div>
                             <div class="mb-3">
-                                <label for="email">Email</label>
-                                <input type="email" name="email" class="form-control form-control-lg"
+                                <label for="email">Email :</label>
+                                <input type="email" name="email" class="form-control"
                                     placeholder="Enter email" required />
                             </div>
                             <div class="mb-3">
-                                <label for="phone">Phone</label>
-                                <input type="tel" name="phone" class="form-control form-control-lg"
+                                <label for="phone">Phone :</label>
+                                <input type="tel" name="phone" class="form-control"
                                     placeholder="Enter phone" required />
                             </div>
                             <div class="mb-3">
-                                <label for="image" class="form-label">Select Image</label>
-                                <input type="file" name="image" class="form-control form-control-lg"
+                                <label for="image" class="form-label">Select Image :</label>
+                                <input type="file" name="image" class="form-control"
                                     placeholder="Enter nphone" required />
                             </div>
                             <div class="mb-3 d-grid">

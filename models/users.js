@@ -1,5 +1,4 @@
 //define our schema
-const { typeOf } = require('mathjs');
 const mongoose = require('mongoose');
 const userSchema = new mongoose.Schema({
     name: {
@@ -22,7 +21,7 @@ const userSchema = new mongoose.Schema({
         type: Date,
         required: true,
         default: Date.now,
-    }
+    },
 });
 
 module.exports = mongoose.model('Users', userSchema );
